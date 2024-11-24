@@ -88,6 +88,7 @@ class UserListViewController: UIViewController, StoryboardInitializable {
         
         // Bind loading state to activity indicator
         viewModel.isLoading
+            .observe(on: MainScheduler.instance)
             .bind(to: loadingIndicator.rx.isAnimating)
             .disposed(by: disposeBag)
         

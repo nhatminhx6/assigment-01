@@ -21,7 +21,8 @@ class UserListCoordinator: BaseCoordinator<Void> {
     override func start() -> Observable<Void> {
         let viewModel = UserListViewModel()
         let viewController = UserListViewController.initFromStoryboard(name: "User")
-        let navigationController = UINavigationController(rootViewController: viewController)
+        //let navigationController = UINavigationController(rootViewController: viewController)
+        let navigationController = BaseNavigationController(rootViewController: viewController)
         self.root = navigationController
         viewController.viewModel = viewModel
         

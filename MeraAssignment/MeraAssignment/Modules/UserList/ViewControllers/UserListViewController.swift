@@ -15,7 +15,6 @@ class UserListViewController: UIViewController, StoryboardInitializable {
     
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    private let chooseLanguageButton = UIBarButtonItem(barButtonSystemItem: .organize, target: nil, action: nil)
     private let refreshControl = UIRefreshControl()
     
     
@@ -34,7 +33,6 @@ class UserListViewController: UIViewController, StoryboardInitializable {
     
     private func setupUI() {
         title = "Github Users"
-        navigationItem.rightBarButtonItem = chooseLanguageButton
         
     }
     

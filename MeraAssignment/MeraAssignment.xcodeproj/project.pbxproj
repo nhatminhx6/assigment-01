@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D24AD95BE8A7D829E42A1EC /* Pods_MeraAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BE2BA06F68A6A0FDD82954 /* Pods_MeraAssignment.framework */; };
+		C681CE734B3666E183FF406E /* Pods_MeraAssignment_MeraAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117DDDEAEE7DE888175307E1 /* Pods_MeraAssignment_MeraAssignmentUITests.framework */; };
+		D1CD1373B93484B4D8112983 /* Pods_MeraAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF14463CB2C24A43C45B294 /* Pods_MeraAssignmentTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFEE62132CF1BB7B00AA102A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEE61F42CF1BB7A00AA102A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFEE61FB2CF1BB7A00AA102A;
+			remoteInfo = MeraAssignment;
+		};
+		CFEE621D2CF1BB7B00AA102A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEE61F42CF1BB7A00AA102A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFEE61FB2CF1BB7A00AA102A;
+			remoteInfo = MeraAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		117DDDEAEE7DE888175307E1 /* Pods_MeraAssignment_MeraAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeraAssignment_MeraAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AF14463CB2C24A43C45B294 /* Pods_MeraAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeraAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFA8676220987353243BDC1 /* Pods-MeraAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeraAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-MeraAssignmentTests/Pods-MeraAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF39DB7410CB4AE21C38D377 /* Pods-MeraAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeraAssignment.debug.xcconfig"; path = "Target Support Files/Pods-MeraAssignment/Pods-MeraAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		CFEE61FC2CF1BB7A00AA102A /* MeraAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeraAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEE62122CF1BB7B00AA102A /* MeraAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeraAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEE621C2CF1BB7B00AA102A /* MeraAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeraAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEE63222CF1C5D800AA102A /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF34AF92CF1CF3300C50960 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF34AFA2CF1CF3300C50960 /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF34AFB2CF1CF3300C50960 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40B6433B560FCD4D4728523 /* Pods-MeraAssignment-MeraAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeraAssignment-MeraAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeraAssignment-MeraAssignmentUITests/Pods-MeraAssignment-MeraAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8BE2BA06F68A6A0FDD82954 /* Pods_MeraAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeraAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DB1997CF193A1063FE36A0 /* Pods-MeraAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeraAssignment.release.xcconfig"; path = "Target Support Files/Pods-MeraAssignment/Pods-MeraAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		F9F4B86064F55AB9D9E788FD /* Pods-MeraAssignment-MeraAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeraAssignment-MeraAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-MeraAssignment-MeraAssignmentUITests/Pods-MeraAssignment-MeraAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC1CF5B6B557F71FAF2FE231 /* Pods-MeraAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeraAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-MeraAssignmentTests/Pods-MeraAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CFAD8CB22CF1E17800E551DC /* Exceptions for "MeraAssignment" folder in "MeraAssignment" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = CFEE61FB2CF1BB7A00AA102A /* MeraAssignment */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CFEE61FE2CF1BB7A00AA102A /* MeraAssignment */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CFAD8CB22CF1E17800E551DC /* Exceptions for "MeraAssignment" folder in "MeraAssignment" target */,
+			);
+			path = MeraAssignment;
+			sourceTree = "<group>";
+		};
+		CFEE62152CF1BB7B00AA102A /* MeraAssignmentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MeraAssignmentTests;
+			sourceTree = "<group>";
+		};
+		CFEE621F2CF1BB7B00AA102A /* MeraAssignmentUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MeraAssignmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFEE61F92CF1BB7A00AA102A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D24AD95BE8A7D829E42A1EC /* Pods_MeraAssignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE620F2CF1BB7B00AA102A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1CD1373B93484B4D8112983 /* Pods_MeraAssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE62192CF1BB7B00AA102A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C681CE734B3666E183FF406E /* Pods_MeraAssignment_MeraAssignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28505C2A04438362C713A997 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF39DB7410CB4AE21C38D377 /* Pods-MeraAssignment.debug.xcconfig */,
+				F9DB1997CF193A1063FE36A0 /* Pods-MeraAssignment.release.xcconfig */,
+				E40B6433B560FCD4D4728523 /* Pods-MeraAssignment-MeraAssignmentUITests.debug.xcconfig */,
+				F9F4B86064F55AB9D9E788FD /* Pods-MeraAssignment-MeraAssignmentUITests.release.xcconfig */,
+				FC1CF5B6B557F71FAF2FE231 /* Pods-MeraAssignmentTests.debug.xcconfig */,
+				ACFA8676220987353243BDC1 /* Pods-MeraAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2EEE0F57E9CC16960806D6DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFF34AF92CF1CF3300C50960 /* RxCocoa.framework */,
+				CFF34AFA2CF1CF3300C50960 /* RxRelay.framework */,
+				CFF34AFB2CF1CF3300C50960 /* RxSwift.framework */,
+				CFEE63222CF1C5D800AA102A /* RxSwift.framework */,
+				E8BE2BA06F68A6A0FDD82954 /* Pods_MeraAssignment.framework */,
+				117DDDEAEE7DE888175307E1 /* Pods_MeraAssignment_MeraAssignmentUITests.framework */,
+				7AF14463CB2C24A43C45B294 /* Pods_MeraAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFEE61F32CF1BB7A00AA102A = {
+			isa = PBXGroup;
+			children = (
+				CFEE61FE2CF1BB7A00AA102A /* MeraAssignment */,
+				CFEE62152CF1BB7B00AA102A /* MeraAssignmentTests */,
+				CFEE621F2CF1BB7B00AA102A /* MeraAssignmentUITests */,
+				CFEE61FD2CF1BB7A00AA102A /* Products */,
+				28505C2A04438362C713A997 /* Pods */,
+				2EEE0F57E9CC16960806D6DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFEE61FD2CF1BB7A00AA102A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE61FC2CF1BB7A00AA102A /* MeraAssignment.app */,
+				CFEE62122CF1BB7B00AA102A /* MeraAssignmentTests.xctest */,
+				CFEE621C2CF1BB7B00AA102A /* MeraAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFEE61FB2CF1BB7A00AA102A /* MeraAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEE62252CF1BB7B00AA102A /* Build configuration list for PBXNativeTarget "MeraAssignment" */;
+			buildPhases = (
+				472385D2236983C650B3FF35 /* [CP] Check Pods Manifest.lock */,
+				CFEE61F82CF1BB7A00AA102A /* Sources */,
+				CFEE61F92CF1BB7A00AA102A /* Frameworks */,
+				CFEE61FA2CF1BB7A00AA102A /* Resources */,
+				A3C629F7D912A87E8F47D079 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CFEE61FE2CF1BB7A00AA102A /* MeraAssignment */,
+			);
+			name = MeraAssignment;
+			productName = MeraAssignment;
+			productReference = CFEE61FC2CF1BB7A00AA102A /* MeraAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFEE62112CF1BB7B00AA102A /* MeraAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEE622A2CF1BB7B00AA102A /* Build configuration list for PBXNativeTarget "MeraAssignmentTests" */;
+			buildPhases = (
+				E53EBB51442D2D043C656913 /* [CP] Check Pods Manifest.lock */,
+				CFEE620E2CF1BB7B00AA102A /* Sources */,
+				CFEE620F2CF1BB7B00AA102A /* Frameworks */,
+				CFEE62102CF1BB7B00AA102A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFEE62142CF1BB7B00AA102A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CFEE62152CF1BB7B00AA102A /* MeraAssignmentTests */,
+			);
+			name = MeraAssignmentTests;
+			productName = MeraAssignmentTests;
+			productReference = CFEE62122CF1BB7B00AA102A /* MeraAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFEE621B2CF1BB7B00AA102A /* MeraAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEE622D2CF1BB7B00AA102A /* Build configuration list for PBXNativeTarget "MeraAssignmentUITests" */;
+			buildPhases = (
+				B987754C273D57D30FD325DA /* [CP] Check Pods Manifest.lock */,
+				CFEE62182CF1BB7B00AA102A /* Sources */,
+				CFEE62192CF1BB7B00AA102A /* Frameworks */,
+				CFEE621A2CF1BB7B00AA102A /* Resources */,
+				187E6E784DD7648F0F5286F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFEE621E2CF1BB7B00AA102A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CFEE621F2CF1BB7B00AA102A /* MeraAssignmentUITests */,
+			);
+			name = MeraAssignmentUITests;
+			productName = MeraAssignmentUITests;
+			productReference = CFEE621C2CF1BB7B00AA102A /* MeraAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFEE61F42CF1BB7A00AA102A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CFEE61FB2CF1BB7A00AA102A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					CFEE62112CF1BB7B00AA102A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = CFEE61FB2CF1BB7A00AA102A;
+					};
+					CFEE621B2CF1BB7B00AA102A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = CFEE61FB2CF1BB7A00AA102A;
+					};
+				};
+			};
+			buildConfigurationList = CFEE61F72CF1BB7A00AA102A /* Build configuration list for PBXProject "MeraAssignment" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFEE61F32CF1BB7A00AA102A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CFEE61FD2CF1BB7A00AA102A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFEE61FB2CF1BB7A00AA102A /* MeraAssignment */,
+				CFEE62112CF1BB7B00AA102A /* MeraAssignmentTests */,
+				CFEE621B2CF1BB7B00AA102A /* MeraAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFEE61FA2CF1BB7A00AA102A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE62102CF1BB7B00AA102A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE621A2CF1BB7B00AA102A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		187E6E784DD7648F0F5286F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeraAssignment-MeraAssignmentUITests/Pods-MeraAssignment-MeraAssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeraAssignment-MeraAssignmentUITests/Pods-MeraAssignment-MeraAssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeraAssignment-MeraAssignmentUITests/Pods-MeraAssignment-MeraAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		472385D2236983C650B3FF35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeraAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3C629F7D912A87E8F47D079 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeraAssignment/Pods-MeraAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeraAssignment/Pods-MeraAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeraAssignment/Pods-MeraAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B987754C273D57D30FD325DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeraAssignment-MeraAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E53EBB51442D2D043C656913 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeraAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFEE61F82CF1BB7A00AA102A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE620E2CF1BB7B00AA102A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEE62182CF1BB7B00AA102A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFEE62142CF1BB7B00AA102A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFEE61FB2CF1BB7A00AA102A /* MeraAssignment */;
+			targetProxy = CFEE62132CF1BB7B00AA102A /* PBXContainerItemProxy */;
+		};
+		CFEE621E2CF1BB7B00AA102A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFEE61FB2CF1BB7A00AA102A /* MeraAssignment */;
+			targetProxy = CFEE621D2CF1BB7B00AA102A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CFEE62262CF1BB7B00AA102A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF39DB7410CB4AE21C38D377 /* Pods-MeraAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LY5K2C8AGJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeraAssignment/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mera.MeraAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFEE62272CF1BB7B00AA102A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DB1997CF193A1063FE36A0 /* Pods-MeraAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LY5K2C8AGJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeraAssignment/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mera.MeraAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFEE62282CF1BB7B00AA102A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFEE62292CF1BB7B00AA102A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFEE622B2CF1BB7B00AA102A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1CF5B6B557F71FAF2FE231 /* Pods-MeraAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mera.MeraAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeraAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeraAssignment";
+			};
+			name = Debug;
+		};
+		CFEE622C2CF1BB7B00AA102A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFA8676220987353243BDC1 /* Pods-MeraAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mera.MeraAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeraAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeraAssignment";
+			};
+			name = Release;
+		};
+		CFEE622E2CF1BB7B00AA102A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E40B6433B560FCD4D4728523 /* Pods-MeraAssignment-MeraAssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mera.MeraAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeraAssignment;
+			};
+			name = Debug;
+		};
+		CFEE622F2CF1BB7B00AA102A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F4B86064F55AB9D9E788FD /* Pods-MeraAssignment-MeraAssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mera.MeraAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MeraAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFEE61F72CF1BB7A00AA102A /* Build configuration list for PBXProject "MeraAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEE62282CF1BB7B00AA102A /* Debug */,
+				CFEE62292CF1BB7B00AA102A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEE62252CF1BB7B00AA102A /* Build configuration list for PBXNativeTarget "MeraAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEE62262CF1BB7B00AA102A /* Debug */,
+				CFEE62272CF1BB7B00AA102A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEE622A2CF1BB7B00AA102A /* Build configuration list for PBXNativeTarget "MeraAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEE622B2CF1BB7B00AA102A /* Debug */,
+				CFEE622C2CF1BB7B00AA102A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEE622D2CF1BB7B00AA102A /* Build configuration list for PBXNativeTarget "MeraAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEE622E2CF1BB7B00AA102A /* Debug */,
+				CFEE622F2CF1BB7B00AA102A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFEE61F42CF1BB7A00AA102A /* Project object */;
+}

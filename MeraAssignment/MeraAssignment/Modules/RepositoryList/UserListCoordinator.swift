@@ -18,12 +18,13 @@ class UserListCoordinator: BaseCoordinator<Void> {
     }
 
     override func start() -> Observable<Void> {
-        let viewModel = UserListViewModel(initialLanguage: "Swift")
+        let viewModel = UserListViewModel()
         let viewController = UserListViewController.initFromStoryboard(name: "User")
         let navigationController = UINavigationController(rootViewController: viewController)
 
         viewController.viewModel = viewModel
 
+        /*
         viewModel.showUser
             .subscribe(onNext: { [weak self] in self?.showRepository(by: $0, in: navigationController) })
             .disposed(by: disposeBag)
@@ -37,6 +38,7 @@ class UserListCoordinator: BaseCoordinator<Void> {
             .map { $0! }
             .bind(to: viewModel.setCurrentLanguage)
             .disposed(by: disposeBag)
+        */
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

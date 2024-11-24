@@ -14,31 +14,25 @@ class UserListViewModel {
     // MARK: - Inputs
     
     /// Call to update current language. Causes reload of the repositories.
-    let setCurrentLanguage: AnyObserver<String>
+    //let setCurrentLanguage: AnyObserver<String>
     
     /// Call to show language list screen.
-    let chooseLanguage: AnyObserver<Void>
+   // let chooseLanguage: AnyObserver<Void>
     
     /// Call to open repository page.
-    let selectRepository: AnyObserver<UserViewModel>
+    //let selectRepository: AnyObserver<UserViewModel>
     
     /// Call to reload repositories.
-    let reload: AnyObserver<Void>
+    //let reload: AnyObserver<Void>
     
     // MARK: - Outputs
     
-    /// Emits a formatted title for a navigation item.
-    let title: Observable<String>
-    
-    /// Emits an error messages to be shown.
-    let alertMessage: Observable<String>
+
     
     /// Emits an url of repository page to be shown.
-    let showUser: Observable<URL>
+    //let showUser: Observable<URL>
     
-    /// Emits when we should show language list.
-    let showLanguageList: Observable<Void>
-    
+
     /// Indicates if more data is available
     let loadNextPageTrigger = PublishRelay<Void>()
     
@@ -53,29 +47,7 @@ class UserListViewModel {
     let hasMoreData = BehaviorRelay<Bool>(value: true)
     
     
-    init(initialLanguage: String, githubService: GithubService = GithubService()) {
-        
-        let _reload = PublishSubject<Void>()
-        self.reload = _reload.asObserver()
-        
-        let _currentLanguage = BehaviorSubject<String>(value: initialLanguage)
-        self.setCurrentLanguage = _currentLanguage.asObserver()
-        
-        self.title = _currentLanguage.asObservable()
-            .map { "\($0)" }
-        
-        let _alertMessage = PublishSubject<String>()
-        self.alertMessage = _alertMessage.asObservable()
-        
-        
-        let _selectRepository = PublishSubject<UserViewModel>()
-        self.selectRepository = _selectRepository.asObserver()
-        self.showUser = _selectRepository.asObservable()
-            .map { URL(string: $0.user.url)! }
-        
-        let _chooseLanguage = PublishSubject<Void>()
-        self.chooseLanguage = _chooseLanguage.asObserver()
-        self.showLanguageList = _chooseLanguage.asObservable()
+    init( githubService: GithubService = GithubService()) {
         
         
         // Handle pagination

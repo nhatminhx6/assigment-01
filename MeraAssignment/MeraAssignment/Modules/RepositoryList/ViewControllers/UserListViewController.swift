@@ -38,7 +38,6 @@ class UserListViewController: UIViewController, StoryboardInitializable {
     }
     
     private func setupTableView() {
-        //tableView.insertSubview(refreshControl, at: 0)
         tableView.register(UINib(nibName: "RepositoryCell", bundle: nil), forCellReuseIdentifier: "RepositoryCell")
         tableView.rx.contentOffset
             .filter { [weak self] offset in
@@ -56,28 +55,8 @@ class UserListViewController: UIViewController, StoryboardInitializable {
     
     
     private func setupBindings() {
-        
-        viewModel.title
-            .bind(to: navigationItem.rx.title)
-            .disposed(by: disposeBag)
-        
-        viewModel.alertMessage
-            .subscribe(onNext: { [weak self] in self?.presentAlert(message: $0) })
-            .disposed(by: disposeBag)
-        
+    
         // View Controller UI actions to the View Model
-        
-        refreshControl.rx.controlEvent(.valueChanged)
-            .bind(to: viewModel.reload)
-            .disposed(by: disposeBag)
-        
-        chooseLanguageButton.rx.tap
-            .bind(to: viewModel.chooseLanguage)
-            .disposed(by: disposeBag)
-        
-        tableView.rx.modelSelected(UserViewModel.self)
-            .bind(to: viewModel.selectRepository)
-            .disposed(by: disposeBag)
         
         
         viewModel.users

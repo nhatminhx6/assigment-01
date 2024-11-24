@@ -12,43 +12,20 @@ import RxRelay
 class UserListViewModel {
     
     // MARK: - Inputs
-    
-    /// Call to update current language. Causes reload of the repositories.
-    //let setCurrentLanguage: AnyObserver<String>
-    
-    /// Call to show language list screen.
-   // let chooseLanguage: AnyObserver<Void>
-    
-    /// Call to open repository page.
-    //let selectRepository: AnyObserver<UserViewModel>
-    
-    /// Call to reload repositories.
-    //let reload: AnyObserver<Void>
+    let loadNextPageTrigger = PublishRelay<Void>()
+    private var pageSize = 20
     
     // MARK: - Outputs
-    
-
-    
-    /// Emits an url of repository page to be shown.
-    //let showUser: Observable<URL>
-    
-
-    /// Indicates if more data is available
-    let loadNextPageTrigger = PublishRelay<Void>()
-    
-    /// Emits an array of fetched users
     let users = BehaviorRelay<[User]>(value: [])
-    
     let isLoading = BehaviorRelay<Bool>(value: false)
     let error = PublishSubject<Error>()
-    
-    private let disposeBag = DisposeBag()
-    private var pageSize = 20
     let hasMoreData = BehaviorRelay<Bool>(value: true)
+    let selectedUser = PublishRelay<User>()
+    
+    let disposeBag = DisposeBag()
     
     
     init( githubService: GithubService = GithubService()) {
-        
         
         // Handle pagination
         loadNextPageTrigger

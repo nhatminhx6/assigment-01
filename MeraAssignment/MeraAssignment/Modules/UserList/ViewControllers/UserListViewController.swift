@@ -33,6 +33,7 @@ class UserListViewController: UIViewController, StoryboardInitializable {
     }
     
     private func setupUI() {
+        title = "Github Users"
         navigationItem.rightBarButtonItem = chooseLanguageButton
         
     }
@@ -47,7 +48,7 @@ class UserListViewController: UIViewController, StoryboardInitializable {
                 let offsetY = offset.y
                 return offsetY > contentHeight - frameHeight - 100 // Trigger near bottom
             }
-            .map { _ in true }
+            .map { _ in }
             .bind(to: viewModel.loadNextPageTrigger)
             .disposed(by: disposeBag)
     }
@@ -55,10 +56,8 @@ class UserListViewController: UIViewController, StoryboardInitializable {
     
     
     private func setupBindings() {
-    
+        
         // View Controller UI actions to the View Model
-        
-        
         viewModel.users
             .bind(to: tableView.rx.items(cellIdentifier: "RepositoryCell", cellType: RepositoryCell.self)) { [weak self] _, user, cell in
                 self?.setupRepositoryCell(cell, userModel: user)
@@ -78,6 +77,11 @@ class UserListViewController: UIViewController, StoryboardInitializable {
                 alert.addAction(UIAlertAction(title: "OK", style: .default))
                 self?.present(alert, animated: true)
             })
+            .disposed(by: disposeBag)
+        
+        // Handle item selection
+        tableView.rx.modelSelected(User.self)
+            .bind(to: viewModel.selectedUser)
             .disposed(by: disposeBag)
     }
     

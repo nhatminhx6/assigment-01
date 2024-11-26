@@ -10,10 +10,14 @@ import RxSwift
 import RxRelay
 
 class UserListViewModel {
+    // Dependencies
+    private let githubService: GithubService
+    let disposeBag = DisposeBag()
+    private var pageSize = 20
     
     // MARK: - Inputs
     let loadNextPageTrigger = PublishRelay<Void>()
-    private var pageSize = 20
+    
     
     // MARK: - Outputs
     let users = BehaviorRelay<[User]>(value: [])
@@ -22,11 +26,10 @@ class UserListViewModel {
     let hasMoreData = BehaviorRelay<Bool>(value: true)
     let selectedUser = PublishRelay<User>()
     
-    let disposeBag = DisposeBag()
     
     
-    init( githubService: GithubService = GithubService()) {
-        
+    init() {
+        self.githubService = GithubService()
         // Handle pagination
         loadNextPageTrigger
             .withLatestFrom(hasMoreData)
@@ -35,7 +38,7 @@ class UserListViewModel {
                 self?.isLoading.accept(true) // Show loading indicator
             })
             .flatMapLatest { [unowned self] _ -> Observable<[User]> in
-                githubService.getMostPopularRepositories(perPage: self.pageSize)
+                githubService.getGithubUsers(perPage: self.pageSize)
                     .catch { error in
                         self.error.onNext(error)
                         return Observable.just([])
@@ -56,6 +59,6 @@ class UserListViewModel {
             })
             .disposed(by: disposeBag)
         
-       
+        
     }
 }

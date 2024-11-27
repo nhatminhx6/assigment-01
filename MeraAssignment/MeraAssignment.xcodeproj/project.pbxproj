@@ -59,14 +59,20 @@
 		CFFCA4DE2CF6FD4B00156D3D /* Exceptions for "MeraAssignment" folder in "MeraAssignmentTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Modules/UserList/Models/User.swift,
+				Modules/UserList/ViewModels/UserListViewModel.swift,
 				Networking/GithubService.swift,
+				Realm/RealmUser.swift,
 			);
 			target = CFEE62112CF1BB7B00AA102A /* MeraAssignmentTests */;
 		};
 		CFFCA4DF2CF6FD4B00156D3D /* Exceptions for "MeraAssignment" folder in "MeraAssignmentUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Modules/UserList/Models/User.swift,
+				Modules/UserList/ViewModels/UserListViewModel.swift,
 				Networking/GithubService.swift,
+				Realm/RealmUser.swift,
 			);
 			target = CFEE621B2CF1BB7B00AA102A /* MeraAssignmentUITests */;
 		};

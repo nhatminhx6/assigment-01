@@ -60,3 +60,34 @@ class RealmUser: Object {
         self.blog = user.blog
     }
 }
+
+
+extension RealmUser {
+    func toUser() -> User {
+        return User(
+            login: login,
+            id: id,
+            location: location,
+            followers: followers,
+            following: following,
+            nodeID: nodeID,
+            avatarURL: avatarURL,
+            gravatarID: gravatarID,
+            url: url,
+            htmlURL: htmlURL,
+            followersURL: followersURL,
+            followingURL: followingURL,
+            gistsURL: gistsURL,
+            starredURL: starredURL,
+            subscriptionsURL: subscriptionsURL,
+            organizationsURL: organizationsURL,
+            reposURL: reposURL,
+            eventsURL: eventsURL,
+            receivedEventsURL: receivedEventsURL,
+            type: type,
+            userViewType: userViewType,
+            siteAdmin: siteAdmin,
+            blog: blog
+        )
+    }
+}

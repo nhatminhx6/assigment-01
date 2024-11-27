@@ -48,8 +48,7 @@ class UserDetailViewController: UIViewController, StoryboardInitializable {
     
     private func setupUI(){
         self.title =  "User Detail"
-        userInfoView.addBottomShadow()
-        userInfoView.layer.cornerRadius =  8
+        userInfoView.addBottomShadow(withCornerRadius: 10)
         avaterContainerView.layer.cornerRadius =  8
         avaterWrapperView.layer.cornerRadius =  56
         avatarImge.layer.cornerRadius =  56

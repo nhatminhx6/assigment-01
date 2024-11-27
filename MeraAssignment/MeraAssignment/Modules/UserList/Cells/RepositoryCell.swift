@@ -19,10 +19,11 @@ class RepositoryCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        containerView.addBottomShadow(withCornerRadius: 10)
         avatarContainerView.layer.cornerRadius = 6
         avatarView.layer.cornerRadius = 42
         avatarWrapperView.layer.cornerRadius = 42
-        containerView.addBottomShadow()
+        
         
     }
     

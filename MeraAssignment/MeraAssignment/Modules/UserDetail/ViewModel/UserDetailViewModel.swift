@@ -13,7 +13,7 @@ import RxSwift
 class UserDetailViewModel {
     
     // Dependencies
-    private let githubService: GithubService
+    var githubService: GithubService
     private let disposeBag = DisposeBag()
     
     // Input

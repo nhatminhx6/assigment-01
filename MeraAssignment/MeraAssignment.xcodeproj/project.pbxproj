@@ -56,6 +56,20 @@
 			);
 			target = CFEE61FB2CF1BB7A00AA102A /* MeraAssignment */;
 		};
+		CFFCA4DE2CF6FD4B00156D3D /* Exceptions for "MeraAssignment" folder in "MeraAssignmentTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Networking/GithubService.swift,
+			);
+			target = CFEE62112CF1BB7B00AA102A /* MeraAssignmentTests */;
+		};
+		CFFCA4DF2CF6FD4B00156D3D /* Exceptions for "MeraAssignment" folder in "MeraAssignmentUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Networking/GithubService.swift,
+			);
+			target = CFEE621B2CF1BB7B00AA102A /* MeraAssignmentUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -63,6 +77,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				CFAD8CB22CF1E17800E551DC /* Exceptions for "MeraAssignment" folder in "MeraAssignment" target */,
+				CFFCA4DE2CF6FD4B00156D3D /* Exceptions for "MeraAssignment" folder in "MeraAssignmentTests" target */,
+				CFFCA4DF2CF6FD4B00156D3D /* Exceptions for "MeraAssignment" folder in "MeraAssignmentUITests" target */,
 			);
 			path = MeraAssignment;
 			sourceTree = "<group>";

@@ -62,7 +62,10 @@ class UserDetailViewController: UIViewController, StoryboardInitializable {
         // Binding user details to labels
         viewModel.userDetail
             .subscribe(onNext: { [weak self] user in
-                self?.nameLabel.text = user?.login ?? ""
+                // Update the UI elements with user details
+                if let userDetail = user {
+                    self?.bindingUI(userDetail)
+                }
             })
             .disposed(by: disposeBag)
         
@@ -87,42 +90,29 @@ class UserDetailViewController: UIViewController, StoryboardInitializable {
             .disposed(by: disposeBag)
     }
     
+
+    // Binding UI
+    private func bindingUI(_ user: User) {
+        self.nameLabel.text = user.login
+        let url = URL(string: user.avatarURL)
+        avatarImge.kf.setImage(with: url)
+        locationLabel.text = user.location ?? ""
+        if let followers = user.followers {
+            followerCountingLabel.text = "\(followers)+"
+        }
+        if let followewing = user.following {
+            followingCountingLabel.text = "\(followewing)+"
+        }
+        blogValueLabel.text = user.blog
+        
+    }
+    
     private func showError(_ error: Error) {
         let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
     
-    
-    private func bindViewModel2() {
-        bindLabel(nameLabel, to: viewModel.user.map { $0.login })
-        bindUserDetail()
-        //bindLabel(idLabel, to: viewModel.repository.map { "ID: \($0.id)" })
-        //bindLabel(urlLabel, to: viewModel.repository.map { "URL: \($0.html_url)" })
-    }
-    
-    private func bindLabel(_ label: UILabel, to observable: Observable<String>) {
-        observable
-            .bind(to: label.rx.text)
-            .disposed(by: disposeBag)
-    }
-    
-    
-    
-    // MARK: - Binding Methods
-    
-    
-    // Binding User Details
- 
-    private func bindUserDetail() {
-        viewModel.userDetail
-            .subscribe(onNext: { [weak self] user in
-                // Update the UI elements with user details
-                self?.nameLabel.text = user?.login
-                // Update other UI elements
-            })
-            .disposed(by: disposeBag)
-    }
     
    
 }

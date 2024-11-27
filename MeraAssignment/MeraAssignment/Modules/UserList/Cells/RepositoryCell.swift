@@ -10,6 +10,7 @@ import Kingfisher
 
 class RepositoryCell: UITableViewCell {
 
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var urlLabel: UILabel!
     @IBOutlet weak var avatarView: UIImageView!
@@ -21,6 +22,8 @@ class RepositoryCell: UITableViewCell {
         avatarContainerView.layer.cornerRadius = 6
         avatarView.layer.cornerRadius = 42
         avatarWrapperView.layer.cornerRadius = 42
+        containerView.addBottomShadow()
+        
     }
     
     func apply(_ user: User) {

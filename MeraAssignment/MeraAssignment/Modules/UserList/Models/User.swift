@@ -7,25 +7,13 @@
 
 import Foundation
 
-// The Repository model
-//struct User: Codable {
-//    let fullName: String
-//    let description: String
-//    let starsCount: Int?
-//    let url: String
-//
-//    enum CodingKeys: String, CodingKey {
-//
-//        case fullName = "full_name"
-//        case starsCount
-//        case description
-//        case url
-//    }
-//}
 
 struct User: Codable {
     let login: String
     let id: Int
+    let location: String?
+    let followers: Int?
+    let following: Int?
     let nodeID: String
     let avatarURL: String
     let gravatarID: String
@@ -43,14 +31,12 @@ struct User: Codable {
     let type: String
     let userViewType: String
     let siteAdmin: Bool
-    //--
-    let fullName: String?
-    let description: String?
-    let starsCount: Int?
-
+    let blog: String?
+   
+   
     // Coding keys for custom mapping
     enum CodingKeys: String, CodingKey {
-        case login, id
+        case login, id, location, followers, following, blog
         case nodeID = "node_id"
         case avatarURL = "avatar_url"
         case gravatarID = "gravatar_id"
@@ -69,9 +55,5 @@ struct User: Codable {
         case userViewType = "user_view_type"
         case siteAdmin = "site_admin"
         
-        //--
-        case fullName = "full_name"
-        case starsCount
-        case description
     }
 }
